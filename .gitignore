@@ -1,0 +1,15 @@
+# environment
+.env
+
+# services
+src/services
+
+# app parameters to pull pre build
+src/data
+
+# Node
+node_modules 
+/.pnp
+.pnp.js
+
+# OS files
