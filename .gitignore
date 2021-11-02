@@ -10,6 +10,11 @@ src/data
 # react
 build
 
+# Firebase
+.firebase
+.firebaserc
+firebase.json
+
 # Node
 node_modules 
 /.pnp
