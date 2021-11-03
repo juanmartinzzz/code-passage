@@ -1,8 +1,13 @@
 import { Card, Container, Grid, Stack, Typography } from "@mui/material";
+import { styled } from "@mui/system";
 import { infoSiteParams } from "../../data/infoSiteParams";
 
+const EqualHeightCard = styled(Card)`
+  height: 100%;
+`;
+
 const ProductCard = ({ title, videoUrl, legend }) => (
-  <Card sx={{ p: 2 }}>
+  <EqualHeightCard sx={{ p: 2 }}>
     <Stack
       alignContent="center"
       alignItems="center"
@@ -23,7 +28,7 @@ const ProductCard = ({ title, videoUrl, legend }) => (
       <Typography variant="h6">{legend}</Typography>
       {/* </Container> */}
     </Stack>
-  </Card>
+  </EqualHeightCard>
 );
 
 const Products = () => (
