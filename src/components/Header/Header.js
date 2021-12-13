@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ThemeProvider } from "@emotion/react";
-import { Delete, Menu } from "@mui/icons-material";
+import { Menu } from "@mui/icons-material";
 import { infoSiteParams } from "../../data/infoSiteParams";
 import {
   Container,
@@ -22,13 +22,15 @@ const themeDarkButtonsEvenInGlobalDarkMode = (theme) => () =>
         fontWeight: "700",
         color: "rgb(255,255,255)",
         textShadow:
-          "0 0 1px rgba(0,0,0, 0.7), 0 0 3px rgba(0,0,0, 0.5), 0 0 15px rgba(0,0,0, 0.4)",
+          "0 0 3px rgba(0,0,0, 0.5), 0 0 5px rgba(0,0,0, 0.6), 0 0 15px rgba(0,0,0, 0.9)",
       },
       h5: {
         fontWeight: "700",
-        color: "rgb(50,50,50)",
+        color: "rgb(160,0,190)",
+        color: "rgb(20,20,20)",
+        acolor: "rgb(255,255,255)",
         textShadow:
-          "0 0 1px rgba(255,255,255, 0.7), 0 0 3px rgba(255,255,255, 0.5), 0 0 15px rgba(255,255,255, 0.4)",
+          "0 0 1px rgba(255,255,255, 1), 0 0 3px rgba(255,255,255, 1), 0 0 10px rgba(255,255,255, 1), 0 0 15px rgba(255,255,255, 1), 0 0 20px rgba(255,255,255, 1), 0 0 30px rgba(255,255,255, 1)",
       },
     },
   });
@@ -50,11 +52,8 @@ const Header = () => (
     <Hero>
       <FixedHeightStack justifyContent="space-between">
         <Stack direction="row" spacing={1}>
-          <IconButton aria-label="delete">
+          <IconButton aria-label="menu">
             <Menu />
-          </IconButton>
-          <IconButton aria-label="delete">
-            <Delete />
           </IconButton>
         </Stack>
 

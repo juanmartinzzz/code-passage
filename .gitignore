@@ -4,6 +4,10 @@
 # services
 src/services
 
+# assets
+raw
+uncompressed
+
 # app parameters to pull pre build
 src/data
 

@@ -3,7 +3,16 @@ import { orange } from "@mui/material/colors";
 
 const theme = createTheme({
   palette: {
-    // mode: "dark",
+    type: "light",
+    primary: {
+      main: "#674092",
+    },
+    secondary: {
+      main: "#f10c5a",
+    },
+    background: {
+      default: "#f0f0f0",
+    },
   },
   status: {
     danger: orange[500],
